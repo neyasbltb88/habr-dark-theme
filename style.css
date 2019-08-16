@@ -758,6 +758,7 @@ hue-6-2: #e6c07b
     margin-bottom: 25px;
     border-radius: var(--border-radius);
     box-shadow: var(--shadow-block);
+    border: 1px solid var(--border-color);
 }
 
 .fonts-loaded .news-topic__title {
