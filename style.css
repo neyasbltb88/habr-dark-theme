@@ -131,7 +131,7 @@ a.post__type-label:hover {
 }
 
 .default-block__content {
-    padding: 30px;
+    padding: 0 30px;
 }
 
 .list-snippet__nickname,
@@ -802,4 +802,22 @@ hue-6-2: #e6c07b
     flex-grow: 1;
     display: flex;
     justify-content: flex-end;
+}
+
+
+/* Скроллбар */
+
+::-webkit-scrollbar {
+    width: .55%;
+    min-width: 6px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--orange);
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: var(--dark-blue);
 }
