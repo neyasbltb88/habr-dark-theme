@@ -1057,3 +1057,11 @@ hue-6-2: #e6c07b
 .poll-result__progress_winner {
     background-color: var(--orange);
 }
+
+
+/* Бейдж уведомлений */
+
+.badge {
+    background-color: var(--red-color);
+    color: var(--dark-blue);
+}
