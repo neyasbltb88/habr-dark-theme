@@ -430,7 +430,6 @@ form .item>label,
 .megapost-teasers,
 .company-info__about,
 .post__translatation,
-.post__text-html blockquote,
 .comment__head_topic-author,
 .promo-block__header,
 .layout__row_services #TMpanel,
@@ -963,4 +962,15 @@ hue-6-2: #e6c07b
 
 .rating-info__title {
     color: var(--text-color);
+}
+
+
+/* blockquote */
+
+.post__text-html blockquote {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    background-color: var(--dark-blue);
+    border-left: 2px solid var(--orange);
+    padding-left: 30px;
 }
