@@ -11,6 +11,15 @@
     --shadow-block: 0 0 20px 0 rgba(0, 0, 0, 0.42);
 }
 
+
+/* TODO: https://habr.com/ru/ppg/sandbox/ */
+
+
+/* TODO: https://account.habr.com/settings/ */
+
+
+/* TODO: https://habr.com/ru/auth/settings/privacy/ */
+
 .post__translatation-link:hover {
     text-decoration: none;
     color: var(--dark-orange);
@@ -972,6 +981,7 @@ hue-6-2: #e6c07b
     border-bottom-left-radius: 5px;
 }
 
+.search-form__field[type="text"]::placeholder,
 .search-field__input[type="text"]::placeholder {
     color: var(--text-color);
     opacity: 0.5;
