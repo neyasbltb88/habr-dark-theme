@@ -238,9 +238,16 @@ form .item input[type=email],
 .fonts-loaded .post-info__title,
 .icon-svg_logo-habrahabr,
 .nav-links__item a,
-.post__text-html {
+.post__text-html,
+.post-info__title,
+.news-topic__title {
     color: var(--text-color);
     text-decoration: none;
+}
+
+.post-info__title:visited,
+.news-topic__title:visited {
+    color: var(--dark-orange);
 }
 
 a.post__type-label,
@@ -942,4 +949,18 @@ hue-6-2: #e6c07b
 .search-field__wrap .search-field__btn {
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
+}
+
+
+/* Заголовок хаба */
+
+.page-header__info-title {
+    color: var(--orange);
+}
+
+
+/* Ники авторов вклада в хаб */
+
+.rating-info__title {
+    color: var(--text-color);
 }
