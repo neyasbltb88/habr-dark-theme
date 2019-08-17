@@ -1,9 +1,10 @@
 :root {
     --dark-blue: rgb(37, 48, 60);
     --blue: #2C3D4E;
-    --text-color: #C3CFE0;
-    --orange: rgb(255, 192, 0);
-    --dark-orange: rgb(199, 149, 1);
+    --light-blue: #5e8eac;
+    --text-color: #c3cfe0;
+    --orange: #ffc000;
+    --dark-orange: #c79501;
     --border-color: rgba(105, 109, 125, 0.4);
     --red-color: #ff3347;
     --border-radius: 5px;
@@ -219,12 +220,12 @@ form .item input[type=email],
 .defination-list__value,
 .post__translatation-link,
 .page-header__info-desc,
-.fonts-loaded .page-header__info-title,
 .comment__message,
 .comment-form__preview,
 .comments-section__head *,
 .promo-item__title,
 .icon-svg_logo-mk,
+.icon-svg_logo-mk:hover,
 .default-block__header-title,
 .stacked-counter__label,
 .user-info__fullname,
@@ -514,7 +515,8 @@ form .item input[type=email],
 .toggle-menu,
 .post__habracut-btn,
 .post-stats,
-.default-block {
+.default-block,
+.company-info_post-additional {
     border-radius: var(--border-radius);
 }
 
@@ -798,7 +800,7 @@ hue-6-2: #e6c07b
 }
 
 .content-list__item_post>.default-block .default-block__header-title,
-.content-list__item_post>.promo-block .promo-block__title-link {
+.promo-block .promo-block__title-link {
     color: var(--orange);
 }
 
@@ -964,6 +966,10 @@ hue-6-2: #e6c07b
     color: var(--text-color);
 }
 
+.rating-info__progress {
+    background-color: var(--dark-blue);
+}
+
 
 /* blockquote */
 
@@ -973,4 +979,45 @@ hue-6-2: #e6c07b
     background-color: var(--dark-blue);
     border-left: 2px solid var(--orange);
     padding-left: 30px;
+}
+
+
+/* Опрос */
+
+.default-block__content_polling {
+    padding: 30px 30px;
+}
+
+.poll-result__data-percent,
+.poll-result__data-votes {
+    color: var(--text-color);
+}
+
+.poll-result__data-label {
+    color: var(--text-color);
+    font-weight: bold;
+}
+
+.poll-result__progress {
+    background-color: var(--light-blue);
+}
+
+.poll-result__data-percent_winner {
+    color: var(--orange);
+}
+
+.poll-result__data-label.poll-result__my-vote {
+    color: var(--orange);
+}
+
+.poll-result__data-label.poll-result__my-vote:after {
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20version%3D%221.1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2214%22%20height%3D%2214%22%20viewBox%3D%220%200%2014%2014%22%3E%0A%20%3Cpath%20fill%3D%22%23ffc000%22%20d%3D%22M7%200c-3.866%200-7%203.134-7%207s3.134%207%207%207%207-3.134%207-7c0-3.866-3.134-7-7-7zM6.010%209.599v0h-0.001l-2.475-2.475%200.742-0.742%201.733%201.733%203.713-3.713%200.742%200.742-4.455%204.455z%22%3E%3C%2Fpath%3E%20%3C%2Fsvg%3E");
+}
+
+.poll-result__bar {
+    background-color: var(--dark-blue);
+}
+
+.poll-result__progress_winner {
+    background-color: var(--orange);
 }
