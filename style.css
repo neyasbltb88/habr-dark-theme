@@ -913,3 +913,28 @@ hue-6-2: #e6c07b
 .toggle-menu__most-read {
     margin-top: 20px;
 }
+
+
+/* Поиск с селектом потоков */
+
+.search-field__wrap {
+    box-shadow: var(--shadow-block);
+}
+
+.search-field__input[type="text"] {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.search-field__select {
+    background-color: var(--blue);
+    color: var(--text-color);
+    border: 1px solid var(--border-color);
+}
+
+.search-field__wrap .search-field__btn {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
