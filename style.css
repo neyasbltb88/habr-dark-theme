@@ -826,9 +826,9 @@ hue-6-2: #e6c07b
 /* Блок "Читают сейчас" */
 
 .js-ad_sticky {
-    max-height: 100vh;
+    max-height: calc(100vh - 20px);
     overflow: auto;
     border-radius: var(--border-radius);
     box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.42) !important;
-    top: 0;
+    top: 10px;
 }
