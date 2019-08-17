@@ -5,6 +5,7 @@
     --orange: rgb(255, 192, 0);
     --dark-orange: rgb(199, 149, 1);
     --border-color: rgba(105, 109, 125, 0.4);
+    --red-color: #ff3347;
     --border-radius: 5px;
     --shadow-block: 0 0 20px 0 rgba(0, 0, 0, 0.42);
 }
@@ -59,7 +60,6 @@
 
 .app-client__description,
 .defination-list__label,
-.bmenu__label,
 #TMpanel .container .bmenu>a:hover,
 #TMpanel .container .bmenu>a.current,
 a.post__type-label:hover {
@@ -95,7 +95,6 @@ a.post__type-label:hover {
 .list-snippet__title-link,
 .list-snippet__fullname,
 .n-dropdown-menu__item-link_flow,
-.fonts-loaded .teaser__body-title,
 .news-block__title,
 .h-message__title,
 .page-header__stats-value,
@@ -161,7 +160,6 @@ a.post__type-label:hover {
 .footer__copyright,
 .post-info__date,
 .user-info__nickname_doggy:hover,
-.post__tags-label,
 .user-info__nickname_small:hover,
 .inline-list__item_hub a:hover,
 .nav-links__item a:hover {
@@ -226,7 +224,6 @@ form .item input[type=email],
 .comment-form__preview,
 .comments-section__head *,
 .promo-item__title,
-.promo-block__title-link,
 .icon-svg_logo-mk,
 .default-block__header-title,
 .stacked-counter__label,
@@ -499,7 +496,7 @@ form .item input[type=email],
 .empty-placeholder,
 .btn_medium,
 .btn_x-large,
-.search-field__input[type=text],
+.search-field__input.search-field__input_suggest[type=text],
 .author-panel,
 .post-share,
 .tm-editor,
@@ -515,14 +512,14 @@ form .item input[type=email],
     border-radius: var(--border-radius);
 }
 
-.search-field__input[type=text],
+.search-field__input.search-field__input_suggest[type=text],
 .empty-placeholder,
 .tm-editor_comments,
 .promo-block,
 .company-info_post-additional,
 .post-donate,
 .default-block {
-    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.42) !important;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.42);
 }
 
 .toggle-menu__item_pagination:hover {
@@ -769,6 +766,10 @@ hue-6-2: #e6c07b
     color: var(--dark-orange);
 }
 
+.default-block {
+    border: 1px solid var(--border-color);
+}
+
 
 /* Посты в ленте отдельными блоками */
 
@@ -784,6 +785,17 @@ hue-6-2: #e6c07b
     box-shadow: var(--shadow-block);
 }
 
+.content-list__item_post>.default-block,
+.content-list__item_post>.promo-block {
+    margin: -20px;
+    box-shadow: none;
+}
+
+.content-list__item_post>.default-block .default-block__header-title,
+.content-list__item_post>.promo-block .promo-block__title-link {
+    color: var(--orange);
+}
+
 
 /* Пост на странице поста отдельным блоком */
 
@@ -792,6 +804,10 @@ hue-6-2: #e6c07b
     padding: 20px;
     border-radius: var(--border-radius);
     box-shadow: var(--shadow-block);
+}
+
+.content-list__item_post:last-child {
+    padding-bottom: 20px;
 }
 
 .post-stats_post {
@@ -831,4 +847,69 @@ hue-6-2: #e6c07b
     border-radius: var(--border-radius);
     box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.42) !important;
     top: 10px;
+}
+
+
+/* Теги */
+
+.post__tags-label,
+.inline-list__item_tag:after {
+    color: var(--text-color)
+}
+
+.bmenu__label {
+    color: var(--text-color)
+}
+
+
+/* Панелька рейтинга, закладок, комментов у поста */
+
+.icon-svg_bookmark,
+.bookmark__counter,
+.bookmark-btn:hover .icon-svg_bookmark,
+.bookmark-btn:hover .bookmark__counter,
+.post-stats__views-count,
+.post-stats__comments-link:hover,
+.post-stats__comments-link {
+    color: var(--text-color)
+}
+
+.bookmark-btn_is-added .icon-svg_bookmark,
+.bookmark-btn_is-added:hover .icon-svg_bookmark {
+    color: var(--red-color);
+}
+
+.teaser__body-title {
+    color: var(--text-color);
+}
+
+.teaser__body-title:hover {
+    color: var(--orange);
+}
+
+
+/* Тостер */
+
+.icon-svg_logo-toster,
+.icon-svg_logo-toster:hover {
+    color: var(--text-color);
+}
+
+.promo-item__attrs-item_nobullet {
+    color: var(--text-color);
+}
+
+
+/* Фрилансим */
+
+.icon-svg_logo-freelansim,
+.icon-svg_logo-freelansim:hover {
+    color: var(--text-color);
+}
+
+
+/* Самое читаемое */
+
+.toggle-menu__most-read {
+    margin-top: 20px;
 }
