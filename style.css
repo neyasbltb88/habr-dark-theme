@@ -928,6 +928,11 @@ hue-6-2: #e6c07b
     border-bottom-left-radius: 5px;
 }
 
+.search-field__input[type="text"]::placeholder {
+    color: var(--text-color);
+    opacity: 0.5;
+}
+
 .search-field__select {
     background-color: var(--blue);
     color: var(--text-color);
