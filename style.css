@@ -1075,3 +1075,88 @@ hue-6-2: #e6c07b
     background-color: var(--red-color);
     color: var(--dark-blue);
 }
+
+
+/* Страница статьи, например, https://habr.com/ru/article/460229/ */
+
+.megapost-cover {
+    margin-bottom: 0;
+}
+
+.t118__line {
+    background-color: var(--border-color) !important;
+}
+
+#allrecords,
+#allrecords .t-rec [class*=_artboard] {
+    background-color: var(--blue);
+}
+
+#allrecords .t-descr,
+#allrecords .t-descr *:not(a),
+#allrecords .t-text,
+#allrecords .t-text *:not(a),
+#allrecords .t-heading,
+#allrecords .t-heading *:not(a) {
+    color: var(--text-color) !important;
+}
+
+#allrecords .t-descr a,
+#allrecords .t-descr a *,
+#allrecords .t-text a,
+#allrecords .t-text a *,
+#allrecords .t-heading a *,
+#allrecords .t-heading a {
+    color: var(--light-blue) !important;
+}
+
+#allrecords .t-descr a:hover,
+#allrecords .t-descr a:hover *,
+#allrecords .t-text a:hover,
+#allrecords .t-text a:hover *,
+#allrecords .t-heading a:hover *,
+#allrecords .t-heading a:hover {
+    color: var(--orange) !important;
+}
+
+.t-container .gg-format-header {
+    color: var(--orange);
+}
+
+.t-container .gg-format-paragraph {
+    color: var(--text-color);
+}
+
+.t-slds__arrow-withbg {
+    background-color: var(--dark-blue) !important;
+    box-shadow: var(--shadow-block);
+    border: 1px solid var(--border-color);
+}
+
+.t-slds__arrow-withbg polyline {
+    stroke: var(--text-color);
+}
+
+.t-slds__arrow-withbg:hover {
+    border: 1px solid var(--dark-orange);
+}
+
+.t-slds__arrow-withbg:hover polyline {
+    stroke: var(--orange);
+}
+
+.t-slds__bullet .t-slds__bullet_body {
+    background-color: var(--dark-blue) !important;
+}
+
+#allrecords .t-slds__bullet_wrapper .t-slds__bullet.t-slds__bullet_active .t-slds__bullet_body {
+    background-color: var(--dark-orange) !important;
+}
+
+#allrecords .t-slds__bullet_wrapper .t-slds__bullet:hover .t-slds__bullet_body {
+    background-color: var(--orange) !important;
+}
+
+#allrecords [class*=_artboard] .tn-elem[data-elem-id] .tn-atom {
+    color: var(--text-color);
+}
