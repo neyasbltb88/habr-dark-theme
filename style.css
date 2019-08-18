@@ -1160,3 +1160,13 @@ html body pre .hljs-link {
 #allrecords [class*=_test_inner-space] {
     padding: 0 !important;
 }
+
+
+/* Формулы */
+
+.MathJax_SVG_Display #MathJax_Zoom {
+    background-color: var(--dark-blue);
+    box-shadow: var(--shadow-block);
+    border-color: var(--border-color);
+    border-radius: var(--border-radius);
+}
