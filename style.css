@@ -561,8 +561,7 @@ hue-6:   #d19a66
 hue-6-2: #e6c07b
 */
 
-.comment__message pre .hljs,
-.post__text-html pre .hljs {
+html body pre .hljs {
     display: block;
     overflow-x: auto;
     margin-top: 15px;
@@ -575,107 +574,73 @@ hue-6-2: #e6c07b
     font-family: monospace, monospace !important;
 }
 
-.comment__message pre .hljs-comment,
-.comment__message pre .hljs-quote,
-.post__text-html pre .hljs-comment,
-.post__text-html pre .hljs-quote {
+html body pre .hljs-comment,
+html body pre .hljs-quote {
     color: #5c6370;
     font-style: italic;
 }
 
-.comment__message pre .hljs-doctag,
-.comment__message pre .hljs-keyword,
-.comment__message pre .hljs-formula,
-.post__text-html pre .hljs-doctag,
-.post__text-html pre .hljs-keyword,
-.post__text-html pre .hljs-formula {
+html body pre .hljs-doctag,
+html body pre .hljs-keyword,
+html body pre .hljs-formula {
     color: #c678dd;
 }
 
-.comment__message pre .hljs-section,
-.comment__message pre .hljs-name,
-.comment__message pre .hljs-selector-tag,
-.comment__message pre .hljs-deletion,
-.comment__message pre .hljs-subst,
-.post__text-html pre .hljs-section,
-.post__text-html pre .hljs-name,
-.post__text-html pre .hljs-selector-tag,
-.post__text-html pre.hljs-deletion,
-.post__text-html pre .hljs-subst {
+html body pre .hljs-section,
+html body pre .hljs-name,
+html body pre .hljs-selector-tag,
+html body pre.hljs-deletion,
+html body pre .hljs-subst {
     color: #e06c75;
 }
 
-.comment__message pre .hljs-literal,
-.post__text-html pre .hljs-literal {
+html body pre .hljs-literal {
     color: #56b6c2;
 }
 
-.comment__message pre .hljs-string,
-.comment__message pre .hljs-regexp,
-.comment__message pre .hljs-addition,
-.comment__message pre .hljs-attribute,
-.comment__message pre .hljs-meta-string,
-.post__text-html pre .hljs-string,
-.post__text-html pre .hljs-regexp,
-.post__text-html pre .hljs-addition,
-.post__text-html pre .hljs-attribute,
-.post__text-html pre .hljs-meta-string {
+html body pre .hljs-string,
+html body pre .hljs-regexp,
+html body pre .hljs-addition,
+html body pre .hljs-attribute,
+html body pre .hljs-meta-string {
     color: #98c379;
 }
 
-.comment__message pre .hljs-class .hljs-title,
-.comment__message pre .hljs-built_in,
-.post__text-html pre .hljs-built_in,
-.post__text-html pre .hljs-class .hljs-title {
+html body pre .hljs-built_in,
+html body pre .hljs-class .hljs-title,
+html body pre .hljs-title {
     color: #e6c07b;
 }
 
-.comment__message pre .hljs-attr,
-.comment__message pre .hljs-variable,
-.comment__message pre .hljs-template-variable,
-.comment__message pre .hljs-type,
-.comment__message pre .hljs-selector-class,
-.comment__message pre .hljs-selector-attr,
-.comment__message pre .hljs-selector-pseudo,
-.comment__message pre .hljs-number,
-.post__text-html pre .hljs-attr,
-.post__text-html pre .hljs-variable,
-.post__text-html pre .hljs-template-variable,
-.post__text-html pre .hljs-type,
-.post__text-html pre .hljs-selector-class,
-.post__text-html pre .hljs-selector-attr,
-.post__text-html pre .hljs-selector-pseudo,
-.post__text-html pre .hljs-number {
+html body pre .hljs-attr,
+html body pre .hljs-variable,
+html body pre .hljs-template-variable,
+html body pre .hljs-type,
+html body pre .hljs-selector-class,
+html body pre .hljs-selector-attr,
+html body pre .hljs-selector-pseudo,
+html body pre .hljs-number {
     color: #d19a66;
 }
 
-.comment__message pre .hljs-symbol,
-.comment__message pre .hljs-bullet,
-.comment__message pre .hljs-link,
-.comment__message pre .hljs-meta,
-.comment__message pre .hljs-selector-id,
-.comment__message pre .hljs-title,
-.post__text-html pre .hljs-symbol,
-.post__text-html pre .hljs-bullet,
-.post__text-html pre .hljs-link,
-.post__text-html pre .hljs-meta,
-.post__text-html pre .hljs-selector-id,
-.post__text-html pre.hljs-title {
+html body pre .hljs-symbol,
+html body pre .hljs-bullet,
+html body pre .hljs-link,
+html body pre .hljs-meta,
+html body pre .hljs-selector-id,
+html body pre.hljs-title {
     color: #61aeee;
 }
 
-.comment__message pre .hljs-emphasis,
-.post__text-html pre .hljs-emphasis {
+html body pre .hljs-emphasis {
     font-style: italic;
 }
 
-.comment__message pre .hljs-strong,
-.post__text-html pre.hljs-strong {
+html body pre.hljs-strong {
     font-weight: bold;
 }
 
-.comment__message pre .hljs-link,
-.post__text-html pre .hljs-link {
+html body pre .hljs-link {
     text-decoration: underline;
 }
 
@@ -1088,14 +1053,24 @@ hue-6-2: #e6c07b
 }
 
 #allrecords,
-#allrecords .t-rec [class*=_artboard] {
-    background-color: var(--blue);
+#allrecords .t-rec [class*=_artboard],
+#allrecords [class*=_test_inner-space],
+#allrecords .t-valign_middle,
+#allrecords [class*=_quest-img],
+#allrecords [class*=_answers],
+#allrecords [class*=_btn-wrapper],
+#allrecords .t-text[class*=_wrapper],
+#allrecords [class*=_result] {
+    background-color: var(--blue) !important;
 }
 
 #allrecords .t-descr,
 #allrecords .t-descr *:not(a),
 #allrecords .t-text,
-#allrecords .t-text *:not(a),
+#allrecords .t-text *:not(a):not([class*=hljs]),
+
+/* #allrecords .t-text *:not([class*=hljs]), */
+
 #allrecords .t-heading,
 #allrecords .t-heading *:not(a) {
     color: var(--text-color) !important;
@@ -1159,4 +1134,29 @@ hue-6-2: #e6c07b
 
 #allrecords [class*=_artboard] .tn-elem[data-elem-id] .tn-atom {
     color: var(--text-color);
+}
+
+#allrecords .t-valign_middle {
+    padding: 45px 45px 65px;
+    box-shadow: var(--shadow-block);
+}
+
+#allrecords .t-container .t-uptitle,
+#allrecords .t-container .t-name {
+    background-color: var(--blue);
+    color: var(--text-color);
+    margin-bottom: 0;
+    padding-bottom: 20px;
+}
+
+.t-uptitle span {
+    color: var(--text-color);
+}
+
+[class*="_quest-info"] {
+    padding-bottom: 0;
+}
+
+#allrecords [class*=_test_inner-space] {
+    padding: 0 !important;
 }
