@@ -20,6 +20,17 @@
 
 /* TODO: https://habr.com/ru/auth/settings/privacy/ */
 
+/* Фикс цвета текста некоторых постов _v2 */
+.post__text_v2 p {
+    color: var(--text-color);
+}
+
+.fonts-loaded .post__text_v2 h2, 
+.fonts-loaded .post__text_v2 h3, 
+.fonts-loaded .post__text_v2 h4 {
+    color: var(--text-color);
+}
+
 .post__translatation-link:hover {
     text-decoration: none;
     color: var(--dark-orange);
